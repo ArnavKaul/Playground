@@ -1,0 +1,1 @@
+### A repository where I play around with the basics without relying on AI
