@@ -1,11 +1,11 @@
 # Parameter-Efficient Fine-Tuning (PEFT) Sandbox: NLLB-200 for Catalan Translation
 
-## 📌 Project Overview
+## Project Overview
 This repository serves as a practical, lightweight sandbox demonstrating **Parameter-Efficient Fine-Tuning (PEFT)** using **Low-Rank Adaptation (LoRA)**. The pipeline takes Meta's `nllb-200-distilled-600M` model and parameter-efficiently customizes it to translate English text into Catalan using the `Helsinki-NLP/opus_books` dataset. It culminates in generating an explicit computation graph visualization of the model's forward pass logits using `torchviz`.
 
 ---
 
-## 🧠 Core Interview Concepts: What is PEFT & LoRA?
+## Core Concept: What is PEFT & LoRA?
 
 ### Why PEFT?
 [cite_start]Full-parameter fine-tuning of Large Language Models (LLMs) or large conditional sequence-to-sequence models (like NLLB) requires updating billions of weights[cite: 15]. This introduces severe engineering and resource constraints:
@@ -30,7 +30,7 @@ $$h = W_0x + \Delta Wx = W_0x + \frac{\alpha}{r}(BA)x$$
 
 ---
 
-## 🛠️ Code Walkthrough & Implementation Details
+## Implementation Details
 
 Here is how the concepts above map directly into the provided Python pipeline:
 
